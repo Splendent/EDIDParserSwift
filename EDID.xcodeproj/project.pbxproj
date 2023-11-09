@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		627A83F82AFCB62700302E72 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627A83F72AFCB62700302E72 /* main.swift */; };
+		627A840D2AFCB70000302E72 /* ConvenientEDID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627A840A2AFCB70000302E72 /* ConvenientEDID.swift */; };
+		627A840F2AFCB70000302E72 /* EDID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627A840B2AFCB70000302E72 /* EDID.swift */; };
+		627A84112AFCB70000302E72 /* EDID_CTA861.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627A840C2AFCB70000302E72 /* EDID_CTA861.swift */; };
+		627A841A2AFCB74F00302E72 /* EDIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627A84192AFCB74F00302E72 /* EDIDTests.swift */; };
+		627A841E2AFCB7A600302E72 /* EDID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627A840B2AFCB70000302E72 /* EDID.swift */; };
+		627A841F2AFCB7A600302E72 /* EDID_CTA861.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627A840C2AFCB70000302E72 /* EDID_CTA861.swift */; };
+		627A84202AFCB7A600302E72 /* ConvenientEDID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627A840A2AFCB70000302E72 /* ConvenientEDID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +32,22 @@
 /* Begin PBXFileReference section */
 		627A83F42AFCB62700302E72 /* EDID */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EDID; sourceTree = BUILT_PRODUCTS_DIR; };
 		627A83F72AFCB62700302E72 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		627A840A2AFCB70000302E72 /* ConvenientEDID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenientEDID.swift; sourceTree = "<group>"; };
+		627A840B2AFCB70000302E72 /* EDID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDID.swift; sourceTree = "<group>"; };
+		627A840C2AFCB70000302E72 /* EDID_CTA861.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDID_CTA861.swift; sourceTree = "<group>"; };
+		627A84172AFCB74F00302E72 /* EDIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EDIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		627A84192AFCB74F00302E72 /* EDIDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDIDTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		627A83F12AFCB62700302E72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		627A84142AFCB74F00302E72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				627A83F62AFCB62700302E72 /* EDID */,
+				627A84182AFCB74F00302E72 /* EDIDTests */,
 				627A83F52AFCB62700302E72 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				627A83F42AFCB62700302E72 /* EDID */,
+				627A84172AFCB74F00302E72 /* EDIDTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +79,27 @@
 			isa = PBXGroup;
 			children = (
 				627A83F72AFCB62700302E72 /* main.swift */,
+				627A84092AFCB70000302E72 /* src */,
 			);
 			path = EDID;
+			sourceTree = "<group>";
+		};
+		627A84092AFCB70000302E72 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				627A840A2AFCB70000302E72 /* ConvenientEDID.swift */,
+				627A840B2AFCB70000302E72 /* EDID.swift */,
+				627A840C2AFCB70000302E72 /* EDID_CTA861.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		627A84182AFCB74F00302E72 /* EDIDTests */ = {
+			isa = PBXGroup;
+			children = (
+				627A84192AFCB74F00302E72 /* EDIDTests.swift */,
+			);
+			path = EDIDTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +122,23 @@
 			productReference = 627A83F42AFCB62700302E72 /* EDID */;
 			productType = "com.apple.product-type.tool";
 		};
+		627A84162AFCB74F00302E72 /* EDIDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 627A841B2AFCB74F00302E72 /* Build configuration list for PBXNativeTarget "EDIDTests" */;
+			buildPhases = (
+				627A84132AFCB74F00302E72 /* Sources */,
+				627A84142AFCB74F00302E72 /* Frameworks */,
+				627A84152AFCB74F00302E72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EDIDTests;
+			productName = EDIDTests;
+			productReference = 627A84172AFCB74F00302E72 /* EDIDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +150,9 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					627A83F32AFCB62700302E72 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					627A84162AFCB74F00302E72 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
@@ -111,16 +171,41 @@
 			projectRoot = "";
 			targets = (
 				627A83F32AFCB62700302E72 /* EDID */,
+				627A84162AFCB74F00302E72 /* EDIDTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		627A84152AFCB74F00302E72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		627A83F02AFCB62700302E72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627A84112AFCB70000302E72 /* EDID_CTA861.swift in Sources */,
+				627A840D2AFCB70000302E72 /* ConvenientEDID.swift in Sources */,
 				627A83F82AFCB62700302E72 /* main.swift in Sources */,
+				627A840F2AFCB70000302E72 /* EDID.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		627A84132AFCB74F00302E72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627A841A2AFCB74F00302E72 /* EDIDTests.swift in Sources */,
+				627A841F2AFCB7A600302E72 /* EDID_CTA861.swift in Sources */,
+				627A84202AFCB7A600302E72 /* ConvenientEDID.swift in Sources */,
+				627A841E2AFCB7A600302E72 /* EDID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +348,34 @@
 			};
 			name = Release;
 		};
+		627A841C2AFCB74F00302E72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.EDIDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		627A841D2AFCB74F00302E72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.EDIDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +393,15 @@
 			buildConfigurations = (
 				627A83FC2AFCB62700302E72 /* Debug */,
 				627A83FD2AFCB62700302E72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		627A841B2AFCB74F00302E72 /* Build configuration list for PBXNativeTarget "EDIDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627A841C2AFCB74F00302E72 /* Debug */,
+				627A841D2AFCB74F00302E72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
